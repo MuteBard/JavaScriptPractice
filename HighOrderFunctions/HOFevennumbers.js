@@ -9,3 +9,6 @@ var evenNumbers = numbers.filter(function(n){
 });
 
 console.log(evenNumbers);
+/*
+[ 2, 4, 6, 8, 10 ]
+*/
