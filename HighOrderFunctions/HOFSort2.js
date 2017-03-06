@@ -17,9 +17,15 @@ var people = [
 ];
 
 function SortStrings(people){
-  //charCodeAt(0)
-  var sortedList = people.sort();
-  return sortedList;
+  var sortedList = people.sort(function(a,b){
+    if (a.length > b.length){
+      return 1;
+    }else if (a.length < b.length){
+      return -1;
+    }else{
+      return 0;
+    }
+  });
+  return sortedList
 }
-
 console.log(SortStrings(people));

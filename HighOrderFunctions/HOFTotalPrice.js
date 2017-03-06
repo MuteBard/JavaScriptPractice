@@ -8,7 +8,7 @@ var products = [
 //VERSION 1
 function total2(array){
   var sum = array.reduce(function(currValue,product){
-     return currValue + product.price;
+    return currValue + product.price;
   },0);
   return sum;
 }
